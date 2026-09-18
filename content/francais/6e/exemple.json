@@ -1,0 +1,22 @@
+{
+  "matiere": "francais",
+  "niveau": "6e",
+  "competence": "orthographe-homophones",
+  "titre": "Distinguer a / a",
+  "questions": [
+    {
+      "id": "fr-6e-orth-001",
+      "type": "qcm",
+      "enonce": "Complete : Il ___ un chat.",
+      "choix": ["a", "à"],
+      "reponseCorrecte": "a"
+    },
+    {
+      "id": "fr-6e-orth-002",
+      "type": "qcm",
+      "enonce": "Complete : Elle va ___ l'ecole.",
+      "choix": ["a", "à"],
+      "reponseCorrecte": "à"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "matiere": "histoire-geographie",
+  "niveau": "6e",
+  "competence": "reperes-chronologiques-prehistoire",
+  "titre": "Se reperer dans le temps : la Prehistoire",
+  "questions": [
+    {
+      "id": "hg-6e-chrono-001",
+      "type": "qcm",
+      "enonce": "Quelle periode vient avant l'Antiquite ?",
+      "choix": ["La Prehistoire", "Le Moyen Age"],
+      "reponseCorrecte": "La Prehistoire"
+    }
+  ]
+}

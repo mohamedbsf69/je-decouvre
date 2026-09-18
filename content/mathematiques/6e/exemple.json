@@ -1,0 +1,22 @@
+{
+  "matiere": "mathematiques",
+  "niveau": "6e",
+  "competence": "nombres-entiers-comparaison",
+  "titre": "Comparer des nombres entiers",
+  "questions": [
+    {
+      "id": "math-6e-nb-001",
+      "type": "qcm",
+      "enonce": "Quel est le plus grand nombre ?",
+      "choix": ["482", "824", "248"],
+      "reponseCorrecte": "824"
+    },
+    {
+      "id": "math-6e-nb-002",
+      "type": "qcm",
+      "enonce": "Quel est le plus petit nombre ?",
+      "choix": ["117", "171", "711"],
+      "reponseCorrecte": "117"
+    }
+  ]
+}
