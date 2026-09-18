@@ -1,0 +1,200 @@
+:root {
+  --couleur-fond: #faf9f6;
+  --couleur-bleu: #4a90d9;
+  --couleur-vert: #5cb85c;
+  --couleur-orange: #f5a623;
+  --couleur-texte: #333333;
+  --couleur-texte-clair: #666666;
+  --couleur-bordure: #e0ddd6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--couleur-fond);
+  color: var(--couleur-texte);
+  font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+  height: 100%;
+}
+
+/* Hauteur fixe (pas min-height) : l'espace eleve (Phaser, Scale.FIT) a
+   besoin d'un parent de taille stable pour calculer sa mise a l'echelle,
+   sinon le canevas peut deborder de la fenetre et masquer des boutons. */
+#app {
+  height: 100vh;
+  overflow: hidden;
+}
+
+#app:has(.reglages) {
+  height: auto;
+  min-height: 100vh;
+  overflow: visible;
+}
+
+.reglages {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+
+.reglages h1 {
+  font-size: 26px;
+}
+
+.reglages h2 {
+  font-size: 20px;
+  margin-top: 40px;
+  border-bottom: 2px solid var(--couleur-bordure);
+  padding-bottom: 8px;
+}
+
+.reglages__entete {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.reglages__lien-eleve {
+  color: var(--couleur-bleu);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.reglages__lien-eleve:hover {
+  text-decoration: underline;
+}
+
+.champ {
+  margin-bottom: 16px;
+}
+
+.champ label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.champ input[type="text"],
+.champ input[type="date"],
+.champ select {
+  font-size: 16px;
+  padding: 8px 10px;
+  border: 2px solid var(--couleur-bordure);
+  border-radius: 8px;
+  background: white;
+  min-width: 220px;
+}
+
+.couleurs {
+  display: flex;
+  gap: 10px;
+}
+
+.couleurs__pastille {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.couleurs__pastille--selection {
+  border-color: var(--couleur-texte);
+}
+
+.bouton {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background: var(--couleur-bleu);
+}
+
+.bouton:hover {
+  filter: brightness(1.05);
+}
+
+.bouton--danger {
+  background: #c9776f;
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+.formulaire-seance {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  background: white;
+  border: 2px solid var(--couleur-bordure);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.liste-seances {
+  list-style: none;
+  margin: 20px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.seance-ligne {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: white;
+  border: 2px solid var(--couleur-bordure);
+  border-radius: 12px;
+  padding: 10px 16px;
+}
+
+.seance-ligne__icone {
+  font-size: 22px;
+}
+
+.seance-ligne__details {
+  flex: 1;
+}
+
+.seance-ligne__titre {
+  font-weight: 600;
+}
+
+.seance-ligne__date {
+  color: var(--couleur-texte-clair);
+  font-size: 14px;
+}
+
+.seance-ligne__statut {
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #eef4ea;
+  color: var(--couleur-vert);
+  font-weight: 600;
+}
+
+.message-info {
+  color: var(--couleur-texte-clair);
+  font-style: italic;
+}
+
+.confirmation {
+  display: inline-block;
+  margin-left: 12px;
+  color: var(--couleur-vert);
+  font-weight: 600;
+}

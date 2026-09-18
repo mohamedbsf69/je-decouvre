@@ -105,26 +105,41 @@ commencer par le mettre en place avant toute autre chose :
 
 ## Etat actuel
 
-- Squelette technique en place : Vite + TypeScript + Phaser 3, `src/main.ts`
-  avec config Phaser minimale (taille fixe, `Scale.FIT`, sans alea moteur)
-  et `src/scenes/BootScene.ts` provisoire ("Le moteur fonctionne").
+- Squelette technique en place : Vite + TypeScript + Phaser 3.
+- **V1 fonctionnelle** (decision du 2026-09-18, voir `docs/decisions.md`) :
+  avant l'exploration façon Zelda, priorite a une interface simple pour
+  enseigner les 3 matieres avec un parcours planifiable par l'utilisateur.
+  - Espace reglages (accompagnant), DOM classique, accessible via
+    `#reglages` : creation du profil (prenom + couleur) et planning manuel
+    des seances (date + matiere + competence), `src/reglages/reglages.ts`.
+  - Espace eleve (Phaser) : `HomeScene` affiche la prochaine seance non
+    terminee du planning ; `SessionScene` fait passer les questions QCM
+    d'une competence avec feedback coherent, retry sans penalite, aucun
+    minuteur, et un bouton "Continuer"/"Terminer" clique par l'eleve.
+  - Etat (profil/planning/progression) versionne dans `localStorage`
+    (`src/data/storage.ts`, cle `je-decouvre:v1`).
+  - Contenu charge depuis `/content/**/*.json` via `import.meta.glob`
+    (`src/data/content.ts`).
+  - Palette de couleurs simple et calme definie dans `src/theme.ts`.
+  - Teste manuellement de bout en bout dans le navigateur (creation profil,
+    ajout de 2 seances, session complete avec bonne/mauvaise reponse, statut
+    "Terminee" mis a jour cote reglages).
 - Dossiers `content/mathematiques/6e`, `content/francais/6e`,
-  `content/histoire-geographie/6e` crees avec un JSON d'exemple chacun
-  (structure : matiere/niveau/competence/questions QCM).
-- `docs/`, `public/` (avec `.gitkeep`), `README.md` et `.gitignore` en place.
-- Stack et contraintes de conception validees avec l'utilisateur.
-- Reference visuelle "Je decouvre l'ordinateur" (Generation 5) pas encore
-  precisee — a demander en priorite avant tout travail sur l'interface
-  (menus, mascotte, types d'epreuves).
+  `content/histoire-geographie/6e` avec un JSON d'exemple chacun (structure
+  matiere/niveau/competence/questions QCM) — a etoffer.
+- Reference visuelle "Je decouvre l'ordinateur" (Generation 5) toujours pas
+  precisee — l'habillage actuel est un placeholder simple et calme, a
+  remplacer quand la reference sera fournie.
 
 ## Prochaines etapes (a affiner avec l'utilisateur)
 
-1. Obtenir la reference visuelle precise (captures d'ecran ou description
-   du menu, de la mascotte, des types d'epreuves) et la consigner ici.
-2. Concevoir l'architecture du "parcours" : comment une zone/epreuve se
-   debloque, comment la progression est representee a l'ecran.
-3. Definir le referentiel de competences 6e par matiere (programme officiel
-   ou autre source choisie avec l'utilisateur).
-4. Implementer le systeme de sauvegarde de progression.
-5. Construire un premier module de matiere complet (probablement
-   mathematiques) comme gabarit avant de dupliquer pour les deux autres.
+1. Etoffer le contenu pedagogique (plus de competences/questions par
+   matiere et par niveau).
+2. Decider si l'accueil eleve doit se lier strictement a la date du jour
+   ou continuer a afficher "la prochaine seance non terminee" quelle que
+   soit la date (voir note dans `docs/decisions.md`).
+3. Obtenir la reference visuelle precise (mascotte, menus) pour habiller
+   l'espace eleve au-dela du placeholder actuel.
+4. Envisager, une fois la V1 validee par l'utilisateur, la couche
+   d'exploration façon Zelda (monde/zones qui se debloquent) par-dessus le
+   systeme de parcours existant.
