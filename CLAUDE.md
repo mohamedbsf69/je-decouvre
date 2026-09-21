@@ -105,6 +105,11 @@ commencer par le mettre en place avant toute autre chose :
 
 ## Etat actuel
 
+- **Hebergement (2026-09-21)** : app publiee sur GitHub Pages, deploiement
+  automatique a chaque push sur `main` (`.github/workflows/deploy-pages.yml`).
+  Lien unique pour les deux espaces, voir `docs/decisions.md` :
+  - Eleve : https://mohamedbsf69.github.io/je-decouvre/
+  - Reglages : https://mohamedbsf69.github.io/je-decouvre/#reglages
 - Squelette technique en place : Vite + TypeScript + Phaser 3.
 - **V1 fonctionnelle** (decision du 2026-09-18, voir `docs/decisions.md`) :
   avant l'exploration façon Zelda, priorite a une interface simple pour
