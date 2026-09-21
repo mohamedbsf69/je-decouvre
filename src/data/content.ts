@@ -7,7 +7,9 @@ const modules = import.meta.glob("/content/**/*.json", {
   import: "default",
 }) as Record<string, CompetenceContent>;
 
-const toutesLesCompetences: CompetenceContent[] = Object.values(modules);
+const toutesLesCompetences: CompetenceContent[] = Object.values(modules).sort(
+  (a, b) => (a.ordre ?? 999) - (b.ordre ?? 999),
+);
 
 export interface MatiereInfo {
   id: Matiere;

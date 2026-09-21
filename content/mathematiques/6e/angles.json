@@ -1,0 +1,38 @@
+{
+  "matiere": "mathematiques",
+  "niveau": "6e",
+  "competence": "angles",
+  "domaine": "Espace et geometrie",
+  "ordre": 15,
+  "titre": "Reconnaitre les angles",
+  "questions": [
+    {
+      "id": "math-6e-an-001",
+      "type": "qcm",
+      "enonce": "Comment s'appelle un angle de 90 degres ?",
+      "choix": ["Un angle droit", "Un angle aigu", "Un angle obtus"],
+      "reponseCorrecte": "Un angle droit"
+    },
+    {
+      "id": "math-6e-an-002",
+      "type": "qcm",
+      "enonce": "Un angle de 45 degres est-il aigu ou obtus ?",
+      "choix": ["Aigu", "Obtus"],
+      "reponseCorrecte": "Aigu"
+    },
+    {
+      "id": "math-6e-an-003",
+      "type": "qcm",
+      "enonce": "Un angle de 120 degres est-il aigu ou obtus ?",
+      "choix": ["Obtus", "Aigu"],
+      "reponseCorrecte": "Obtus"
+    },
+    {
+      "id": "math-6e-an-004",
+      "type": "qcm",
+      "enonce": "Combien de degres mesure un angle droit ?",
+      "choix": ["90 degres", "180 degres", "45 degres"],
+      "reponseCorrecte": "90 degres"
+    }
+  ]
+}

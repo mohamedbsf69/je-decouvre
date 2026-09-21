@@ -124,22 +124,37 @@ commencer par le mettre en place avant toute autre chose :
   - Teste manuellement de bout en bout dans le navigateur (creation profil,
     ajout de 2 seances, session complete avec bonne/mauvaise reponse, statut
     "Terminee" mis a jour cote reglages).
-- Dossiers `content/mathematiques/6e`, `content/francais/6e`,
-  `content/histoire-geographie/6e` avec un JSON d'exemple chacun (structure
-  matiere/niveau/competence/questions QCM) — a etoffer.
+  - **Agenda hebdomadaire** (2026-09-21) : `AgendaScene` accessible depuis
+    l'accueil eleve via un bouton fixe "Voir mon planning de la semaine".
+    Affiche toujours la semaine civile lundi->dimanche contenant la date du
+    jour (pas une fenetre glissante), avec le jour courant mis en valeur.
+    Logique pure de calcul de semaine dans `src/data/planning.ts`. Le
+    bouton generique (`src/ui/bouton.ts`) reduit desormais automatiquement
+    la taille du texte s'il est trop long pour tenir dans le bouton.
+- **Programme de mathematiques 6e complet** (2026-09-21) : 18 competences
+  dans `content/mathematiques/6e/` couvrant les 4 grands domaines du
+  programme officiel (nombres et calculs, grandeurs et mesures, espace et
+  geometrie, organisation et gestion de donnees), 4 questions QCM chacune.
+  Chaque fichier a un champ `ordre` utilise pour trier les listes (menu
+  deroulant des reglages, etc. — voir `src/data/content.ts`).
+  `content/francais/6e` et `content/histoire-geographie/6e` n'ont encore
+  que leur exemple initial — a etoffer de la meme maniere si besoin.
 - Reference visuelle "Je decouvre l'ordinateur" (Generation 5) toujours pas
   precisee — l'habillage actuel est un placeholder simple et calme, a
-  remplacer quand la reference sera fournie.
+  remplacer quand la reference sera fournie. Decision explicite de
+  l'utilisateur (2026-09-21) : rester sur cette interface simple sans
+  mascotte pour l'instant, prioriser une app utilisable.
 
 ## Prochaines etapes (a affiner avec l'utilisateur)
 
-1. Etoffer le contenu pedagogique (plus de competences/questions par
-   matiere et par niveau).
+1. Etoffer le contenu pedagogique de francais et histoire-geographie 6e
+   (une seule competence d'exemple chacun pour le moment).
 2. Decider si l'accueil eleve doit se lier strictement a la date du jour
    ou continuer a afficher "la prochaine seance non terminee" quelle que
    soit la date (voir note dans `docs/decisions.md`).
 3. Obtenir la reference visuelle precise (mascotte, menus) pour habiller
-   l'espace eleve au-dela du placeholder actuel.
+   l'espace eleve au-dela du placeholder actuel — pas urgent, l'utilisateur
+   a confirme vouloir d'abord une app utilisable.
 4. Envisager, une fois la V1 validee par l'utilisateur, la couche
    d'exploration façon Zelda (monde/zones qui se debloquent) par-dessus le
    systeme de parcours existant.

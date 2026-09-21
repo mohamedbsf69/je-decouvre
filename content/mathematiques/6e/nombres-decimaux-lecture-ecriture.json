@@ -1,0 +1,38 @@
+{
+  "matiere": "mathematiques",
+  "niveau": "6e",
+  "competence": "nombres-decimaux-lecture-ecriture",
+  "domaine": "Nombres et calculs",
+  "ordre": 3,
+  "titre": "Lire et ecrire les nombres decimaux",
+  "questions": [
+    {
+      "id": "math-6e-ndl-001",
+      "type": "qcm",
+      "enonce": "Comment s'ecrit 'trois virgule cinq' en chiffres ?",
+      "choix": ["3,5", "35", "0,35"],
+      "reponseCorrecte": "3,5"
+    },
+    {
+      "id": "math-6e-ndl-002",
+      "type": "qcm",
+      "enonce": "Dans le nombre 12,47, quel chiffre est au rang des centiemes ?",
+      "choix": ["4", "7", "2"],
+      "reponseCorrecte": "7"
+    },
+    {
+      "id": "math-6e-ndl-003",
+      "type": "qcm",
+      "enonce": "Comment se lit 0,6 ?",
+      "choix": ["Six dixiemes", "Six centiemes", "Six unites"],
+      "reponseCorrecte": "Six dixiemes"
+    },
+    {
+      "id": "math-6e-ndl-004",
+      "type": "qcm",
+      "enonce": "Quel nombre correspond a 5 unites et 2 dixiemes ?",
+      "choix": ["5,2", "5,02", "52"],
+      "reponseCorrecte": "5,2"
+    }
+  ]
+}

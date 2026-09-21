@@ -1,0 +1,38 @@
+{
+  "matiere": "mathematiques",
+  "niveau": "6e",
+  "competence": "addition-soustraction-nombres",
+  "domaine": "Nombres et calculs",
+  "ordre": 5,
+  "titre": "Additionner et soustraire",
+  "questions": [
+    {
+      "id": "math-6e-as-001",
+      "type": "qcm",
+      "enonce": "Combien font 245 + 128 ?",
+      "choix": ["373", "363", "383"],
+      "reponseCorrecte": "373"
+    },
+    {
+      "id": "math-6e-as-002",
+      "type": "qcm",
+      "enonce": "Combien font 500 - 237 ?",
+      "choix": ["263", "273", "253"],
+      "reponseCorrecte": "263"
+    },
+    {
+      "id": "math-6e-as-003",
+      "type": "qcm",
+      "enonce": "Combien font 12,5 + 3,7 ?",
+      "choix": ["16,2", "15,2", "16,8"],
+      "reponseCorrecte": "16,2"
+    },
+    {
+      "id": "math-6e-as-004",
+      "type": "qcm",
+      "enonce": "Combien font 10 - 4,5 ?",
+      "choix": ["5,5", "6,5", "5"],
+      "reponseCorrecte": "5,5"
+    }
+  ]
+}

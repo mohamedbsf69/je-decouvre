@@ -1,0 +1,38 @@
+{
+  "matiere": "mathematiques",
+  "niveau": "6e",
+  "competence": "proportionnalite-initiation",
+  "domaine": "Nombres et calculs",
+  "ordre": 9,
+  "titre": "Premiers pas avec la proportionnalite",
+  "questions": [
+    {
+      "id": "math-6e-pr-001",
+      "type": "qcm",
+      "enonce": "Un paquet de 4 biscuits coute 2 euros. Combien coutent 8 biscuits ?",
+      "choix": ["4 euros", "3 euros", "6 euros"],
+      "reponseCorrecte": "4 euros"
+    },
+    {
+      "id": "math-6e-pr-002",
+      "type": "qcm",
+      "enonce": "Une recette pour 2 personnes utilise 100 g de farine. Combien pour 4 personnes ?",
+      "choix": ["200 g", "150 g", "300 g"],
+      "reponseCorrecte": "200 g"
+    },
+    {
+      "id": "math-6e-pr-003",
+      "type": "qcm",
+      "enonce": "Si 1 stylo coute 2 euros, combien coutent 5 stylos ?",
+      "choix": ["10 euros", "8 euros", "12 euros"],
+      "reponseCorrecte": "10 euros"
+    },
+    {
+      "id": "math-6e-pr-004",
+      "type": "qcm",
+      "enonce": "Une voiture roule a vitesse constante et parcourt 60 km en 1 heure. Combien de km en 2 heures ?",
+      "choix": ["120 km", "100 km", "90 km"],
+      "reponseCorrecte": "120 km"
+    }
+  ]
+}

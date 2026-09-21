@@ -1,0 +1,38 @@
+{
+  "matiere": "mathematiques",
+  "niveau": "6e",
+  "competence": "fractions-simples",
+  "domaine": "Nombres et calculs",
+  "ordre": 8,
+  "titre": "Decouvrir les fractions simples",
+  "questions": [
+    {
+      "id": "math-6e-fr-001",
+      "type": "qcm",
+      "enonce": "Que represente 1/2 d'une pizza ?",
+      "choix": ["La moitie", "Le tiers", "Le quart"],
+      "reponseCorrecte": "La moitie"
+    },
+    {
+      "id": "math-6e-fr-002",
+      "type": "qcm",
+      "enonce": "Quelle fraction correspond a 'un quart' ?",
+      "choix": ["1/4", "4/1", "1/3"],
+      "reponseCorrecte": "1/4"
+    },
+    {
+      "id": "math-6e-fr-003",
+      "type": "qcm",
+      "enonce": "3/4 represente-t-il plus ou moins que 1/2 ?",
+      "choix": ["Plus", "Moins", "Pareil"],
+      "reponseCorrecte": "Plus"
+    },
+    {
+      "id": "math-6e-fr-004",
+      "type": "qcm",
+      "enonce": "Combien de quarts faut-il pour faire un entier ?",
+      "choix": ["4", "2", "3"],
+      "reponseCorrecte": "4"
+    }
+  ]
+}

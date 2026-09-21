@@ -2,6 +2,8 @@
   "matiere": "mathematiques",
   "niveau": "6e",
   "competence": "nombres-entiers-comparaison",
+  "domaine": "Nombres et calculs",
+  "ordre": 2,
   "titre": "Comparer des nombres entiers",
   "questions": [
     {
@@ -17,6 +19,20 @@
       "enonce": "Quel est le plus petit nombre ?",
       "choix": ["117", "171", "711"],
       "reponseCorrecte": "117"
+    },
+    {
+      "id": "math-6e-nb-003",
+      "type": "qcm",
+      "enonce": "Parmi 305, 350 et 53, lequel est le plus petit ?",
+      "choix": ["305", "350", "53"],
+      "reponseCorrecte": "53"
+    },
+    {
+      "id": "math-6e-nb-004",
+      "type": "qcm",
+      "enonce": "Quel signe complete correctement : 4 821 ... 4 812 ?",
+      "choix": [">", "<", "="],
+      "reponseCorrecte": ">"
     }
   ]
 }

@@ -1,0 +1,38 @@
+{
+  "matiere": "mathematiques",
+  "niveau": "6e",
+  "competence": "solides-pave-droit-cube",
+  "domaine": "Espace et geometrie",
+  "ordre": 17,
+  "titre": "Le pave droit et le cube",
+  "questions": [
+    {
+      "id": "math-6e-so-001",
+      "type": "qcm",
+      "enonce": "Combien de faces a un cube ?",
+      "choix": ["6", "4", "8"],
+      "reponseCorrecte": "6"
+    },
+    {
+      "id": "math-6e-so-002",
+      "type": "qcm",
+      "enonce": "Combien de faces a un pave droit ?",
+      "choix": ["6", "4", "8"],
+      "reponseCorrecte": "6"
+    },
+    {
+      "id": "math-6e-so-003",
+      "type": "qcm",
+      "enonce": "Combien d'aretes a un cube ?",
+      "choix": ["12", "8", "6"],
+      "reponseCorrecte": "12"
+    },
+    {
+      "id": "math-6e-so-004",
+      "type": "qcm",
+      "enonce": "Combien de sommets a un cube ?",
+      "choix": ["8", "6", "12"],
+      "reponseCorrecte": "8"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "matiere": "mathematiques",
+  "niveau": "6e",
+  "competence": "vocabulaire-figures-planes",
+  "domaine": "Espace et geometrie",
+  "ordre": 14,
+  "titre": "Vocabulaire des figures planes",
+  "questions": [
+    {
+      "id": "math-6e-vf-001",
+      "type": "qcm",
+      "enonce": "Combien de cotes a un triangle ?",
+      "choix": ["3", "4", "5"],
+      "reponseCorrecte": "3"
+    },
+    {
+      "id": "math-6e-vf-002",
+      "type": "qcm",
+      "enonce": "Combien de cotes a un quadrilatere ?",
+      "choix": ["4", "3", "5"],
+      "reponseCorrecte": "4"
+    },
+    {
+      "id": "math-6e-vf-003",
+      "type": "qcm",
+      "enonce": "Comment s'appelle un quadrilatere qui a 4 cotes egaux et 4 angles droits ?",
+      "choix": ["Un carre", "Un losange", "Un rectangle"],
+      "reponseCorrecte": "Un carre"
+    },
+    {
+      "id": "math-6e-vf-004",
+      "type": "qcm",
+      "enonce": "Comment s'appelle un triangle qui a ses 3 cotes egaux ?",
+      "choix": ["Equilateral", "Isocele", "Rectangle"],
+      "reponseCorrecte": "Equilateral"
+    }
+  ]
+}

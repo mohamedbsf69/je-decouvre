@@ -1,0 +1,38 @@
+{
+  "matiere": "mathematiques",
+  "niveau": "6e",
+  "competence": "perimetre-figures-usuelles",
+  "domaine": "Grandeurs et mesures",
+  "ordre": 12,
+  "titre": "Calculer un perimetre",
+  "questions": [
+    {
+      "id": "math-6e-pe-001",
+      "type": "qcm",
+      "enonce": "Quel est le perimetre d'un carre de cote 5 cm ?",
+      "choix": ["20 cm", "25 cm", "10 cm"],
+      "reponseCorrecte": "20 cm"
+    },
+    {
+      "id": "math-6e-pe-002",
+      "type": "qcm",
+      "enonce": "Quel est le perimetre d'un rectangle de longueur 6 cm et largeur 3 cm ?",
+      "choix": ["18 cm", "9 cm", "24 cm"],
+      "reponseCorrecte": "18 cm"
+    },
+    {
+      "id": "math-6e-pe-003",
+      "type": "qcm",
+      "enonce": "Un triangle a des cotes de 4 cm, 5 cm et 6 cm. Quel est son perimetre ?",
+      "choix": ["15 cm", "14 cm", "16 cm"],
+      "reponseCorrecte": "15 cm"
+    },
+    {
+      "id": "math-6e-pe-004",
+      "type": "qcm",
+      "enonce": "Quel est le perimetre d'un carre de cote 7 cm ?",
+      "choix": ["28 cm", "21 cm", "14 cm"],
+      "reponseCorrecte": "28 cm"
+    }
+  ]
+}

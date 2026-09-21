@@ -1,0 +1,38 @@
+{
+  "matiere": "mathematiques",
+  "niveau": "6e",
+  "competence": "multiplication-nombres",
+  "domaine": "Nombres et calculs",
+  "ordre": 6,
+  "titre": "Multiplier des nombres",
+  "questions": [
+    {
+      "id": "math-6e-mu-001",
+      "type": "qcm",
+      "enonce": "Combien font 7 x 8 ?",
+      "choix": ["56", "54", "64"],
+      "reponseCorrecte": "56"
+    },
+    {
+      "id": "math-6e-mu-002",
+      "type": "qcm",
+      "enonce": "Combien font 12 x 5 ?",
+      "choix": ["60", "55", "65"],
+      "reponseCorrecte": "60"
+    },
+    {
+      "id": "math-6e-mu-003",
+      "type": "qcm",
+      "enonce": "Combien font 3,2 x 10 ?",
+      "choix": ["32", "3,2", "320"],
+      "reponseCorrecte": "32"
+    },
+    {
+      "id": "math-6e-mu-004",
+      "type": "qcm",
+      "enonce": "Combien font 6 x 9 ?",
+      "choix": ["54", "56", "45"],
+      "reponseCorrecte": "54"
+    }
+  ]
+}

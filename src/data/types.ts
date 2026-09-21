@@ -19,6 +19,8 @@ export interface CompetenceContent {
   niveau: string;
   competence: string;
   titre: string;
+  domaine?: string; // grand domaine du programme (ex: "Nombres et calculs")
+  ordre?: number; // ordre pedagogique suggere, pour trier les listes
   questions: Question[];
 }
 

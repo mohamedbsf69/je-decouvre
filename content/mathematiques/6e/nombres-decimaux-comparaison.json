@@ -1,0 +1,38 @@
+{
+  "matiere": "mathematiques",
+  "niveau": "6e",
+  "competence": "nombres-decimaux-comparaison",
+  "domaine": "Nombres et calculs",
+  "ordre": 4,
+  "titre": "Comparer des nombres decimaux",
+  "questions": [
+    {
+      "id": "math-6e-ndc-001",
+      "type": "qcm",
+      "enonce": "Quel est le plus grand : 3,5 ou 3,45 ?",
+      "choix": ["3,5", "3,45"],
+      "reponseCorrecte": "3,5"
+    },
+    {
+      "id": "math-6e-ndc-002",
+      "type": "qcm",
+      "enonce": "Quel est le plus petit : 0,8 ou 0,08 ?",
+      "choix": ["0,8", "0,08"],
+      "reponseCorrecte": "0,08"
+    },
+    {
+      "id": "math-6e-ndc-003",
+      "type": "qcm",
+      "enonce": "Parmi 1,9 ; 2,5 ; 3,1 lequel est entre 2 et 3 ?",
+      "choix": ["1,9", "2,5", "3,1"],
+      "reponseCorrecte": "2,5"
+    },
+    {
+      "id": "math-6e-ndc-004",
+      "type": "qcm",
+      "enonce": "Quel signe complete correctement : 6,20 ... 6,2 ?",
+      "choix": ["=", ">", "<"],
+      "reponseCorrecte": "="
+    }
+  ]
+}

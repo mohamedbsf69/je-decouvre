@@ -1,0 +1,38 @@
+{
+  "matiere": "mathematiques",
+  "niveau": "6e",
+  "competence": "lecture-tableaux-graphiques",
+  "domaine": "Organisation et gestion de donnees",
+  "ordre": 18,
+  "titre": "Lire des tableaux et des graphiques",
+  "questions": [
+    {
+      "id": "math-6e-lt-001",
+      "type": "qcm",
+      "enonce": "Un tableau indique que la classe 6eA a 25 eleves et la classe 6eB a 28 eleves. Quelle classe a le plus d'eleves ?",
+      "choix": ["6eB", "6eA", "Les deux pareil"],
+      "reponseCorrecte": "6eB"
+    },
+    {
+      "id": "math-6e-lt-002",
+      "type": "qcm",
+      "enonce": "Sur un diagramme en barres, plus une barre est haute, plus la quantite qu'elle represente est...",
+      "choix": ["Grande", "Petite", "Egale aux autres"],
+      "reponseCorrecte": "Grande"
+    },
+    {
+      "id": "math-6e-lt-003",
+      "type": "qcm",
+      "enonce": "Un tableau a double entree permet de croiser deux informations, par exemple les matieres et les jours. Vrai ou faux ?",
+      "choix": ["Vrai", "Faux"],
+      "reponseCorrecte": "Vrai"
+    },
+    {
+      "id": "math-6e-lt-004",
+      "type": "qcm",
+      "enonce": "Si un graphique montre que les ventes augmentent chaque mois, la courbe est-elle croissante ou decroissante ?",
+      "choix": ["Croissante", "Decroissante"],
+      "reponseCorrecte": "Croissante"
+    }
+  ]
+}

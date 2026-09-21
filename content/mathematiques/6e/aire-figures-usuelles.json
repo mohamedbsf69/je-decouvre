@@ -1,0 +1,38 @@
+{
+  "matiere": "mathematiques",
+  "niveau": "6e",
+  "competence": "aire-figures-usuelles",
+  "domaine": "Grandeurs et mesures",
+  "ordre": 13,
+  "titre": "Calculer une aire",
+  "questions": [
+    {
+      "id": "math-6e-ai-001",
+      "type": "qcm",
+      "enonce": "Quelle est l'aire d'un carre de cote 4 cm ?",
+      "choix": ["16 cm2", "8 cm2", "12 cm2"],
+      "reponseCorrecte": "16 cm2"
+    },
+    {
+      "id": "math-6e-ai-002",
+      "type": "qcm",
+      "enonce": "Quelle est l'aire d'un rectangle de longueur 5 cm et largeur 3 cm ?",
+      "choix": ["15 cm2", "8 cm2", "10 cm2"],
+      "reponseCorrecte": "15 cm2"
+    },
+    {
+      "id": "math-6e-ai-003",
+      "type": "qcm",
+      "enonce": "Quelle est l'aire d'un carre de cote 6 cm ?",
+      "choix": ["36 cm2", "12 cm2", "24 cm2"],
+      "reponseCorrecte": "36 cm2"
+    },
+    {
+      "id": "math-6e-ai-004",
+      "type": "qcm",
+      "enonce": "Quelle est l'aire d'un rectangle de longueur 10 cm et largeur 2 cm ?",
+      "choix": ["20 cm2", "12 cm2", "22 cm2"],
+      "reponseCorrecte": "20 cm2"
+    }
+  ]
+}

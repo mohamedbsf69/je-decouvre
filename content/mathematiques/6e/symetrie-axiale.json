@@ -1,0 +1,38 @@
+{
+  "matiere": "mathematiques",
+  "niveau": "6e",
+  "competence": "symetrie-axiale",
+  "domaine": "Espace et geometrie",
+  "ordre": 16,
+  "titre": "Decouvrir la symetrie axiale",
+  "questions": [
+    {
+      "id": "math-6e-sy-001",
+      "type": "qcm",
+      "enonce": "Dans une symetrie axiale, la figure et son image sont-elles superposables ?",
+      "choix": ["Oui", "Non"],
+      "reponseCorrecte": "Oui"
+    },
+    {
+      "id": "math-6e-sy-002",
+      "type": "qcm",
+      "enonce": "Comment s'appelle la droite utilisee pour construire une symetrie ?",
+      "choix": ["L'axe de symetrie", "Le diametre", "Le rayon"],
+      "reponseCorrecte": "L'axe de symetrie"
+    },
+    {
+      "id": "math-6e-sy-003",
+      "type": "qcm",
+      "enonce": "La distance entre un point et l'axe de symetrie est-elle la meme que celle entre son image et l'axe ?",
+      "choix": ["Oui", "Non"],
+      "reponseCorrecte": "Oui"
+    },
+    {
+      "id": "math-6e-sy-004",
+      "type": "qcm",
+      "enonce": "Un papillon dont les deux ailes sont identiques et opposees illustre-t-il une symetrie ?",
+      "choix": ["Oui", "Non"],
+      "reponseCorrecte": "Oui"
+    }
+  ]
+}

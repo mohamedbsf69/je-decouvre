@@ -1,0 +1,38 @@
+{
+  "matiere": "mathematiques",
+  "niveau": "6e",
+  "competence": "conversions-durees",
+  "domaine": "Grandeurs et mesures",
+  "ordre": 11,
+  "titre": "Convertir des durees",
+  "questions": [
+    {
+      "id": "math-6e-du-001",
+      "type": "qcm",
+      "enonce": "Combien de minutes dans 1 heure ?",
+      "choix": ["60", "100", "24"],
+      "reponseCorrecte": "60"
+    },
+    {
+      "id": "math-6e-du-002",
+      "type": "qcm",
+      "enonce": "Combien de secondes dans 1 minute ?",
+      "choix": ["60", "100", "30"],
+      "reponseCorrecte": "60"
+    },
+    {
+      "id": "math-6e-du-003",
+      "type": "qcm",
+      "enonce": "Combien d'heures dans 1 journee ?",
+      "choix": ["24", "12", "60"],
+      "reponseCorrecte": "24"
+    },
+    {
+      "id": "math-6e-du-004",
+      "type": "qcm",
+      "enonce": "Combien de minutes dans 2 heures ?",
+      "choix": ["120", "100", "90"],
+      "reponseCorrecte": "120"
+    }
+  ]
+}

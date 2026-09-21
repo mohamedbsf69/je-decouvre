@@ -1,0 +1,38 @@
+{
+  "matiere": "mathematiques",
+  "niveau": "6e",
+  "competence": "division-euclidienne",
+  "domaine": "Nombres et calculs",
+  "ordre": 7,
+  "titre": "La division euclidienne",
+  "questions": [
+    {
+      "id": "math-6e-de-001",
+      "type": "qcm",
+      "enonce": "Dans la division de 29 par 4, quel est le quotient ?",
+      "choix": ["7", "6", "8"],
+      "reponseCorrecte": "7"
+    },
+    {
+      "id": "math-6e-de-002",
+      "type": "qcm",
+      "enonce": "Dans la division de 29 par 4, quel est le reste ?",
+      "choix": ["1", "0", "4"],
+      "reponseCorrecte": "1"
+    },
+    {
+      "id": "math-6e-de-003",
+      "type": "qcm",
+      "enonce": "Combien font 48 divise par 6 ?",
+      "choix": ["8", "7", "9"],
+      "reponseCorrecte": "8"
+    },
+    {
+      "id": "math-6e-de-004",
+      "type": "qcm",
+      "enonce": "Quel est le reste de la division de 17 par 5 ?",
+      "choix": ["2", "3", "1"],
+      "reponseCorrecte": "2"
+    }
+  ]
+}

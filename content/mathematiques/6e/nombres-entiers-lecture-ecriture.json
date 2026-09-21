@@ -1,0 +1,38 @@
+{
+  "matiere": "mathematiques",
+  "niveau": "6e",
+  "competence": "nombres-entiers-lecture-ecriture",
+  "domaine": "Nombres et calculs",
+  "ordre": 1,
+  "titre": "Lire et ecrire les nombres entiers",
+  "questions": [
+    {
+      "id": "math-6e-nel-001",
+      "type": "qcm",
+      "enonce": "Comment s'ecrit en chiffres le nombre quatre mille deux cent six ?",
+      "choix": ["4206", "4260", "42006"],
+      "reponseCorrecte": "4206"
+    },
+    {
+      "id": "math-6e-nel-002",
+      "type": "qcm",
+      "enonce": "Quel est le chiffre des centaines dans 5 382 ?",
+      "choix": ["5", "3", "8"],
+      "reponseCorrecte": "3"
+    },
+    {
+      "id": "math-6e-nel-003",
+      "type": "qcm",
+      "enonce": "Comment se lit le nombre 12 040 ?",
+      "choix": ["Douze mille quarante", "Cent vingt mille quatre", "Douze mille quatre cents"],
+      "reponseCorrecte": "Douze mille quarante"
+    },
+    {
+      "id": "math-6e-nel-004",
+      "type": "qcm",
+      "enonce": "Quel nombre correspond a 7 dizaines de mille et 3 unites ?",
+      "choix": ["70003", "7003", "73000"],
+      "reponseCorrecte": "70003"
+    }
+  ]
+}

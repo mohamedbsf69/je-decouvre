@@ -1,5 +1,6 @@
 import Phaser from "phaser";
 import { demarrerEspaceReglages } from "./reglages/reglages";
+import { AgendaScene } from "./scenes/AgendaScene";
 import { HomeScene } from "./scenes/HomeScene";
 import { SessionScene } from "./scenes/SessionScene";
 import "./style.css";
@@ -32,7 +33,7 @@ function demarrer(): void {
       mode: Phaser.Scale.FIT,
       autoCenter: Phaser.Scale.CENTER_BOTH,
     },
-    scene: [HomeScene, SessionScene],
+    scene: [HomeScene, SessionScene, AgendaScene],
   };
 
   new Phaser.Game(config);

@@ -1,0 +1,38 @@
+{
+  "matiere": "mathematiques",
+  "niveau": "6e",
+  "competence": "conversions-longueurs-masses-contenances",
+  "domaine": "Grandeurs et mesures",
+  "ordre": 10,
+  "titre": "Convertir longueurs, masses et contenances",
+  "questions": [
+    {
+      "id": "math-6e-cv-001",
+      "type": "qcm",
+      "enonce": "Combien de centimetres dans 1 metre ?",
+      "choix": ["100", "10", "1000"],
+      "reponseCorrecte": "100"
+    },
+    {
+      "id": "math-6e-cv-002",
+      "type": "qcm",
+      "enonce": "Combien de grammes dans 1 kilogramme ?",
+      "choix": ["1000", "100", "10"],
+      "reponseCorrecte": "1000"
+    },
+    {
+      "id": "math-6e-cv-003",
+      "type": "qcm",
+      "enonce": "Combien de millilitres dans 1 litre ?",
+      "choix": ["1000", "100", "10"],
+      "reponseCorrecte": "1000"
+    },
+    {
+      "id": "math-6e-cv-004",
+      "type": "qcm",
+      "enonce": "2 km, combien de metres ?",
+      "choix": ["2000", "200", "20000"],
+      "reponseCorrecte": "2000"
+    }
+  ]
+}
