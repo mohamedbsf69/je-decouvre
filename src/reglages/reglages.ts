@@ -28,7 +28,7 @@ export function demarrerEspaceReglages(conteneur: HTMLElement): void {
     <div class="reglages">
       <div class="reglages__entete">
         <h1>Reglages — espace accompagnant</h1>
-        <a class="reglages__lien-eleve" href="/">Ouvrir l'espace eleve</a>
+        <a class="reglages__lien-eleve" href="./">Ouvrir l'espace eleve</a>
       </div>
       <p class="message-info">
         Cet espace sert a creer le profil et a planifier les seances de
