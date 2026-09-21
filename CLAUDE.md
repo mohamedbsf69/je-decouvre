@@ -106,10 +106,16 @@ commencer par le mettre en place avant toute autre chose :
 ## Etat actuel
 
 - **Hebergement (2026-09-21)** : app publiee sur GitHub Pages, deploiement
-  automatique a chaque push sur `main` (`.github/workflows/deploy-pages.yml`).
-  Lien unique pour les deux espaces, voir `docs/decisions.md` :
-  - Eleve : https://mohamedbsf69.github.io/je-decouvre/
-  - Reglages : https://mohamedbsf69.github.io/je-decouvre/#reglages
+  automatique a chaque push sur `main` ou `dev` (`.github/workflows/deploy-pages.yml`).
+  Deux environnements sur le meme site (voir `docs/decisions.md`) :
+  - **uat** (branche `main`, "vrais" utilisateurs) :
+    - Eleve : https://mohamedbsf69.github.io/je-decouvre/
+    - Reglages : https://mohamedbsf69.github.io/je-decouvre/#reglages
+  - **dev** (branche `dev`, travail en cours) :
+    - Eleve : https://mohamedbsf69.github.io/je-decouvre/dev/
+    - Reglages : https://mohamedbsf69.github.io/je-decouvre/dev/#reglages
+  - Flux attendu : developper sur `dev`, fusionner dans `main` pour
+    promouvoir en uat quand une fonctionnalite est prete a etre testee.
 - Squelette technique en place : Vite + TypeScript + Phaser 3.
 - **V1 fonctionnelle** (decision du 2026-09-18, voir `docs/decisions.md`) :
   avant l'exploration façon Zelda, priorite a une interface simple pour

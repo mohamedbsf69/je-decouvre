@@ -68,3 +68,31 @@ explicite de l'utilisateur, a revoir si besoin.
 Le repo etant public, le code de l'app est visible par quiconque a le
 lien (mais pas les donnees de l'enfant, qui restent locales au
 navigateur de l'utilisateur).
+
+## Deux environnements : dev et uat (2026-09-21)
+
+Decision prise avec l'utilisateur : separer une version "dev" (travail en
+cours) d'une version "uat" (celle qu'on montre/teste avec les vrais
+utilisateurs). GitHub Pages ne servant qu'un seul site par depot, les deux
+versions coexistent sur le **meme site**, a des chemins differents,
+construites depuis deux branches :
+
+- Branche `main` = **uat** -> publie a la racine (URL deja existante,
+  inchangee) : `https://mohamedbsf69.github.io/je-decouvre/`
+- Branche `dev` = **dev** -> publie sous `/dev/` :
+  `https://mohamedbsf69.github.io/je-decouvre/dev/`
+  (reglages : ajouter `#reglages` a la fin de chacune de ces deux URLs)
+
+A chaque push sur `main` OU `dev`, `.github/workflows/deploy-pages.yml`
+reconstruit **les deux** versions (checkout des deux branches, un build
+chacune avec un `base` Vite different via la variable d'environnement
+`DEPLOY_BASE_PATH`, voir `vite.config.ts`) puis republie le site complet.
+Cette reconstruction systematique des deux est necessaire : `deploy-pages`
+remplace tout le contenu du site a chaque publication, donc si on ne
+reconstruisait que la version qui a change, l'autre disparaitrait.
+
+**Flux de travail attendu a partir de maintenant** : le developpement se
+fait sur la branche `dev` ; quand une fonctionnalite est prete a etre
+testee par les vrais utilisateurs (parent/eleve), on la fusionne dans
+`main` pour la "promouvoir" en uat. A confirmer/ajuster avec l'utilisateur
+si ce flux ne convient pas en pratique.

@@ -1,8 +1,16 @@
-name: Deployer sur GitHub Pages
+name: Deployer sur GitHub Pages (dev + uat)
+
+# GitHub Pages ne sert qu'un seul site par depot : les deux versions
+# coexistent donc sur le meme site, a des chemins differents. A chaque push
+# sur main OU dev, on reconstruit les DEUX versions (a partir des deux
+# branches) et on republie le site complet, pour que l'une n'efface jamais
+# l'autre.
+#   - branche main -> uat, publie a la racine du site
+#   - branche dev  -> dev, publie sous /dev/
 
 on:
   push:
-    branches: [main]
+    branches: [main, dev]
   workflow_dispatch:
 
 permissions:
@@ -18,17 +26,50 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Recuperer la branche main (uat)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: uat-src
+
+      - name: Recuperer la branche dev
+        uses: actions/checkout@v4
+        with:
+          ref: dev
+          path: dev-src
+
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
-      - run: npm ci
-      - run: npm run build
+
+      - name: Construire uat (racine du site)
+        working-directory: uat-src
+        run: |
+          npm ci
+          npm run build
+        env:
+          DEPLOY_BASE_PATH: /je-decouvre/
+
+      - name: Construire dev (sous /dev/)
+        working-directory: dev-src
+        run: |
+          npm ci
+          npm run build
+        env:
+          DEPLOY_BASE_PATH: /je-decouvre/dev/
+
+      - name: Assembler le site combine (uat + dev)
+        run: |
+          mkdir -p site
+          cp -r uat-src/dist/. site/
+          mkdir -p site/dev
+          cp -r dev-src/dist/. site/dev/
+
       - uses: actions/configure-pages@v5
+
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: site
 
   deploy:
     needs: build
